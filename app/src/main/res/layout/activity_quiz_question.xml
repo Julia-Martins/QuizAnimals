@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestionActivity"
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="What animal is this?"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:textSize="30dp"
+
+            android:layout_centerHorizontal="true"
+        />
+        <ImageView
+            android:id="@+id/imgQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="Quiz Image"
+
+            tools:src="@drawable/seal"
+            android:layout_centerHorizontal="true"
+
+            android:layout_below="@id/txtQuestion"
+        />
+
+        <LinearLayout
+            android:id="@+id/completeProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/imgQuestion"
+            >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"
+            />
+
+            <TextView
+                android:id="@+id/txtProgressNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textSize="15dp"
+                tools:text="0/10"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnOptionOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_style"
+
+            android:text="Wolf"
+            android:textColor="@color/options_blue"
+            android:padding="10dp"
+            android:textSize="25dp"
+
+            android:layout_below="@id/completeProgressBar"
+            android:textAlignment="center"
+        />
+
+        <TextView
+            android:id="@+id/btnOptionTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_style"
+
+            android:text="Wolf"
+            android:textColor="@color/options_blue"
+            android:padding="10dp"
+            android:textSize="25dp"
+
+            android:layout_below="@id/btnOptionOne"
+            android:textAlignment="center"
+        />
+
+        <TextView
+            android:id="@+id/btnOptionThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_style"
+
+            android:text="Wolf"
+            android:textColor="@color/options_blue"
+            android:padding="10dp"
+            android:textSize="25dp"
+
+            android:layout_below="@id/btnOptionTwo"
+            android:textAlignment="center"
+        />
+
+        <TextView
+            android:id="@+id/btnOptionFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_style"
+
+            android:text="Wolf"
+            android:textColor="@color/options_blue"
+            android:padding="10dp"
+            android:textSize="25dp"
+
+            android:layout_below="@id/btnOptionThree"
+            android:textAlignment="center"
+        />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/dark_blue"
+
+            android:text="SUBMIT"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+            android:enabled="false"
+
+            android:layout_below="@id/btnOptionFour"
+            android:textAlignment="center"
+        />
+
+    </RelativeLayout>
+
+</ScrollView>

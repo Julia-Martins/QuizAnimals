@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalResult"
+    android:background="@drawable/night_forest_street"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Result"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+    />
+
+    <ImageView
+        android:id="@+id/imgTrophy"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+
+        android:layout_centerInParent="true"
+        tools:src="@drawable/trophy" />
+
+    <TextView
+        android:id="@+id/txtCongratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Hey, Congratulations!"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imgTrophy"
+        android:layout_marginTop="15dp"
+    />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="UserName"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+        android:layout_below="@id/txtCongratulations"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+    />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Your score is 0 out 10"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+        android:layout_below="@id/txtUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+    />
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="FINISH"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        android:backgroundTint="@color/mtrl_textinput_default_box_stroke_color"
+
+        android:layout_below="@id/txtScore"
+        android:layout_marginTop="10dp"
+    />
+
+</RelativeLayout>

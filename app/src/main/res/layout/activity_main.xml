@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/night_forest_street"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/layoutMain"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:text="Quiz App!"
+        android:textColor="@color/white"
+
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:text="Welcome"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textNameNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtWelcome"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp"
+                android:text="Please enter your name" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/textNameNickname"
+                android:layout_marginTop="10dp"
+
+                android:textColorHint="@color/mtrl_textinput_default_box_stroke_color"
+
+                app:counterOverflowTextAppearance="@color/dark_blue"
+                app:boxStrokeColor="@color/dark_blue"
+
+                app:boxStrokeWidthFocused="2dp"
+                app:hintAnimationEnabled="true"
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txtDigName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Name: "
+                    android:autofillHints="username"
+                    android:inputType="textCapWords"
+                    android:maxLength="16"
+                    android:padding="15dp"
+                    android:textAllCaps="true"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtInputLayout"
+
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/dark_blue"
+                android:padding="15dp"
+                android:text="START"
+
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
