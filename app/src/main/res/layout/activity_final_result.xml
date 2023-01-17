@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FinalResult"
     android:background="@drawable/night_forest_street"
-    android:padding="16dp">
+    android:padding="16dp"
+    >
 
     <TextView
         android:id="@+id/txtResultTitle"
@@ -29,7 +29,7 @@
         android:layout_height="220dp"
 
         android:layout_centerInParent="true"
-        tools:src="@drawable/trophy" />
+        android:src="@drawable/trophy" />
 
     <TextView
         android:id="@+id/txtCongratulations"
@@ -54,7 +54,7 @@
         android:text="UserName"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="25dp"
 
         android:layout_below="@id/txtCongratulations"
         android:layout_centerHorizontal="true"
